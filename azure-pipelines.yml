@@ -33,7 +33,7 @@ steps:
 - script: |
     npm install
     npm run build
+    npm start
   displayName: 'npm install and build'
-  - task: owaspzap@1
-    inputs:
-      aggressivemode: true
+- task: owaspzap@1
+  inputs:
