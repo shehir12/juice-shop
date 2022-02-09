@@ -1,5 +1,5 @@
 # Node.js
-- task: SonarCloudAnalyze@1
+
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -11,6 +11,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: SonarCloudAnalyze@1
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
