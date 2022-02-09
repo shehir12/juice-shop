@@ -36,5 +36,4 @@ steps:
     repository: 'test1'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-- task: owaspzap@1
-  inputs:
+
