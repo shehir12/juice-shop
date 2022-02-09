@@ -30,10 +30,11 @@ steps:
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
-- script: |
-    npm install
-    npm run build
-    npm start
-  displayName: 'npm install and build'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'docker'
+    repository: 'test1'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
 - task: owaspzap@1
   inputs:
