@@ -35,4 +35,5 @@ steps:
     npm run build
     npm start
   displayName: 'npm install and build'
-
+- task: owaspzap@1
+  inputs:
