@@ -20,8 +20,7 @@ steps:
   inputs:
     SonarCloud: 'Sonar1'
     organization: 'samhehir1'
-    scannerMode: 'CLI'
-    configMode: 'file'
+    scannerMode: 'Other'
 - task: SonarCloudAnalyze@1
 - script: |
     npm install
